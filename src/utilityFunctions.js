@@ -60,7 +60,7 @@ export const loginUser = async (data) => {
       headers: {
         "Content-Type": "application/json",
       },
-      credentials: "include",
+      credentials: "same-origin",
       body: JSON.stringify(data),
     }
   );
@@ -72,7 +72,7 @@ export const checkLogin = async () => {
     "https://url-shortener-backend-kartik.herokuapp.com/",
     {
       method: "GET",
-      credentials: "include",
+      credentials: "same-origin",
     }
   );
   return response;
@@ -83,7 +83,7 @@ export const userLogout = async () => {
     "https://url-shortener-backend-kartik.herokuapp.com/logout/",
     {
       method: "GET",
-      credentials: "include",
+      credentials: "same-origin",
     }
   );
   return response;
