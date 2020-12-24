@@ -4,84 +4,109 @@ export function validateEmail(mail) {
 }
 
 export const checkString = (rand) => {
-  const response = fetch(`http://localhost:5000/email/${rand}`);
+  const response = fetch(
+    `https://url-shortener-backend-kartik.herokuapp.com/email/${rand}`
+  );
   return response;
 };
 
 export const updateUser = async (data) => {
-  const response = await fetch("http://localhost:5000/email", {
-    method: "PATCH",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(data),
-  });
+  const response = await fetch(
+    "https://url-shortener-backend-kartik.herokuapp.com/email",
+    {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }
+  );
   return response;
 };
 
 export const createUser = async (data) => {
-  const response = await fetch("http://localhost:5000/email", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(data),
-  });
+  const response = await fetch(
+    "https://url-shortener-backend-kartik.herokuapp.com/email",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }
+  );
   return response;
 };
 
 export const checkUser = async (data) => {
-  const response = await fetch("http://localhost:5000/email", {
-    method: "PUT",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(data),
-  });
+  const response = await fetch(
+    "https://url-shortener-backend-kartik.herokuapp.com/email",
+    {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }
+  );
   return response;
 };
 
 export const loginUser = async (data) => {
-  const response = await fetch("http://localhost:5000/login", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    credentials: "include",
-    body: JSON.stringify(data),
-  });
+  const response = await fetch(
+    "https://url-shortener-backend-kartik.herokuapp.com/login",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      credentials: "include",
+      body: JSON.stringify(data),
+    }
+  );
   return response;
 };
 
 export const checkLogin = async () => {
-  const response = await fetch("http://localhost:5000/", {
-    method: "GET",
-    credentials: "include",
-  });
+  const response = await fetch(
+    "https://url-shortener-backend-kartik.herokuapp.com/",
+    {
+      method: "GET",
+      credentials: "include",
+    }
+  );
   return response;
 };
 
 export const userLogout = async () => {
-  const response = await fetch("http://localhost:5000/logout/", {
-    method: "GET",
-    credentials: "include",
-  });
+  const response = await fetch(
+    "https://url-shortener-backend-kartik.herokuapp.com/logout/",
+    {
+      method: "GET",
+      credentials: "include",
+    }
+  );
   return response;
 };
 
 export const convertUrl = async (data) => {
-  const response = await fetch("http://localhost:5000/url", {
-    method: "POST",
-    headers: {
-      "content-type": "application/json",
-    },
-    body: JSON.stringify(data),
-  });
+  const response = await fetch(
+    "https://url-shortener-backend-kartik.herokuapp.com/url",
+    {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }
+  );
   return response;
 };
 
 export const getUrls = async () => {
-  const response = await fetch("http://localhost:5000/url");
+  const response = await fetch(
+    "https://url-shortener-backend-kartik.herokuapp.com/url"
+  );
   return response;
 };
 

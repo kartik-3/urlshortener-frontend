@@ -20,7 +20,7 @@ document
             swal({ text: "Provided URL has already been converted once" });
           } else {
             document.querySelector("#short-url").value =
-              "Converted URL is http://localhost:5000/url/" + data.shortUri;
+              "Converted URL is https://url-shortener-backend-kartik.herokuapp.com/" + data.shortUri;
             document.querySelector("#short-url").classList.remove("d-none");
             swal({
               text: "URL converted successfully.",

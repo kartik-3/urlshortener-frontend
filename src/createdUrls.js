@@ -33,7 +33,7 @@ let tr = [],
 
         th1[i].innerText = i + 1;
         td2[i].innerText = data[i].originalUrl;
-        td3[i].innerText = "http://localhost:5000/url/" + data[i].shortUrl;
+        td3[i].innerText = "https://url-shortener-backend-kartik.herokuapp.com/url/" + data[i].shortUrl;
         td4[i].innerText = data[i].creationDate;
         td5[i].innerText = data[i].creationTime;
 
